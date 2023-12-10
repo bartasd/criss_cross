@@ -1,0 +1,33 @@
+body,
+body * {
+  margin: 0;
+  background-color: rgb(199, 209, 223);
+}
+
+:root {
+  --btn: 200px;
+}
+
+@media (max-height: 750px) {
+  :root {
+    --btn: 150px;
+  }
+}
+
+@media (max-height: 600px) {
+  :root {
+    --btn: 100px;
+  }
+}
+
+@media (max-width: 750px) {
+  :root {
+    --btn: 150px;
+  }
+}
+
+@media (max-width: 600px) {
+  :root {
+    --btn: 100px;
+  }
+}

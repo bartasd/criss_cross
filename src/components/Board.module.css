@@ -1,0 +1,92 @@
+.field {
+  display: grid;
+  grid-template-columns: calc(var(--btn) + 10px) var(--btn) var(--btn);
+  grid-template-rows: calc(var(--btn) + 10px) var(--btn) var(--btn);
+  grid-template-areas:
+    "field1 field2 field3"
+    "field4 field5 field6"
+    "field7 field8 field9";
+  background-color: rgb(142, 152, 165);
+  gap: 10px;
+  width: calc(3 * var(--btn) + 40px);
+  height: calc(3 * var(--btn) + 40px);
+  margin-left: calc(50vw - 20px - 1.5 * var(--btn));
+  border-radius: 15px;
+}
+.field > div:hover {
+  box-shadow: 1px 3px 5px black;
+}
+
+.field > div:nth-child(3n + 1) {
+  margin-left: 10px;
+}
+
+.field > div:nth-child(-n + 3) {
+  margin-top: 10px;
+}
+
+.field1 {
+  grid-area: field1;
+}
+.field2 {
+  grid-area: field2;
+}
+.field3 {
+  grid-area: field3;
+}
+.field4 {
+  grid-area: field4;
+}
+.field5 {
+  grid-area: field5;
+}
+.field6 {
+  grid-area: field6;
+}
+.field7 {
+  grid-area: field7;
+}
+.field8 {
+  grid-area: field8;
+}
+.field9 {
+  grid-area: field9;
+}
+
+.wins {
+  min-width: 500px;
+  width: 500px;
+  margin-left: calc(50vw - 250px);
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.wins p {
+  text-align: center;
+}
+
+.wins > p:first-child {
+  font-weight: bold;
+  font-size: 32px;
+  color: firebrick;
+}
+
+.wins > p:last-child {
+  visibility: hidden;
+}
+
+.wins > p:last-child.m {
+  visibility: visible;
+}
+
+span.a {
+  color: green;
+}
+
+span.b {
+  color: yellow;
+}
+
+span.c {
+  color: red;
+}
